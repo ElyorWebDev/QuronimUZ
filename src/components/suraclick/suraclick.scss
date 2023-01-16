@@ -1,0 +1,28 @@
+.suraclick{
+    text-decoration: none;
+    color: inherit !important;
+    &:hover{
+        box-shadow: 0px 0px 0px 1px #4bd44b;
+        cursor: pointer;
+    }
+    border: 2px solid #4bd44b;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+    &__number{
+         
+        width:60px;
+        
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        
+        font-size: 20px;
+        border: 2px solid #4bd44b;
+    }
+  
+}

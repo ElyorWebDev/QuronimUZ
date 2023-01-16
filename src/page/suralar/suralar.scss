@@ -1,0 +1,39 @@
+.suralar{
+    margin-top: 100px;
+    padding: 50px 0;
+    // overflow: auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+    justify-content: space-between;
+    .suraclick{
+        width: 25% !important;
+        margin-top: 10px;
+
+    }
+}
+@media(max-width:1000px){
+    .suralar{
+        flex-wrap: wrap !important;
+        a{
+            width: 49% !important;
+        }
+        .suraclick{
+            width: 39% !important;
+        }
+    }
+   
+}
+@media(max-width:700px){
+    .suralar{
+        flex-wrap: wrap !important;
+        a{
+            width: 49% !important;
+        }
+        .suraclick{
+            width: 89% !important;
+        }
+    }
+   
+}

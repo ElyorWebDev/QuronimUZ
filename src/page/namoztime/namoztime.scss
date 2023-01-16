@@ -1,0 +1,38 @@
+.namoztime{
+    margin-top: 110px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #4bd44b;
+    border-radius: 15px;
+    padding: 10px;
+    
+    .bomdod{
+        margin: 20px 0;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        &__img{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        font-weight: 800;
+        &__time{
+            font-size: 25px;
+        }
+    }
+}

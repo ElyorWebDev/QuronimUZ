@@ -1,0 +1,54 @@
+.ayats{
+   margin-top: 50px;
+    padding: 10px;
+    border: 2px solid #4bd44b;
+    border-radius: 10px;
+    font-weight: 700;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRxInsN22zLhBpv4TRXpNwUN69TWHhyd9l133um3D2w&s);
+    background-size: contain;
+    color: black;
+
+    &__audio{
+        display: flex;
+        justify-content: space-between;
+        .num{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #4bd44b;
+        }
+        
+    }
+}
+@media(max-width:500px){
+    .ayats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        &__audio{
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+@media(max-width:350px){
+    .ayats{
+   
+        &__audio{
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            .ayat_audio{
+                display: flex !important;
+                width: 90%;
+            }
+        }
+    }
+}
