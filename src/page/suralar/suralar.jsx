@@ -1,21 +1,24 @@
 
 import "./suralar.scss"
 import Suraclick from '../../components/suraclick/suraclick'
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import axios from "axios"
+import {Mycontext} from "../../App"
+
 
 
 const Suralar = () => {
- 
-  const [suralar,setSuralar]=useState([])
-  useEffect(()=>{
-    axios("http://api.alquran.cloud/v1/surah")
-      .then(res=>setSuralar(res.data.data))
+  
+  const {suralar,setSuralar}=useContext(Mycontext)
+  // useEffect(()=>{
+  //   axios("http://api.alquran.cloud/v1/surah")
+  //     .then(res=>setSuralar(res.data.data))
 
 
-  },[])
+  // },[])
+  // console.log(suralar);
 
- 
+
   
   return (
     <div className='container'>

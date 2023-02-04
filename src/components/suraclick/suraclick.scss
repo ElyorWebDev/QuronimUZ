@@ -1,4 +1,7 @@
 .suraclick{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
     color: inherit !important;
     &:hover{
@@ -14,6 +17,7 @@
     &__number{
          
         width:60px;
+        height: 60px;
         
         border-radius: 50%;
         display: flex;
